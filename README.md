@@ -18,6 +18,11 @@ Enter your account details in the exact order as specified in the template.
 
 **account_id** is the account identifier; enter any string. It will be displayed in the script logs.
 
+## Sctipts
+1. Show balances of the main account (Funding, Trading) and sub-accounts (Funding).
+2. Transfer funds from all sub-accounts to the main account (Funding, Trading).
+3. Execute Buy/Sell trade on the token pair.
+
 ## Example of the balance script in action
 ![image](https://github.com/Antik21/OKX-AIO/assets/170818298/74aaa17f-31d7-457d-839a-9f351e7afe8f)
 
