@@ -19,8 +19,8 @@ def main():
     while True:
         print("Choice your case:")
         print("1. Show balance")
-        print("2. Collect to Master")
-        print("3. Trade Sell")
+        print("2. Collect to Main")
+        print("3. Trade market")
         print("0. Exit")
 
         choice = input("Input your choice: ")
