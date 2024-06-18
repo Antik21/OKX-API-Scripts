@@ -35,7 +35,7 @@ def start():
                 print(f"SubAccount {sub_account_name}: {balance} {BALANCE_TOKEN}")
             else:
                 print(f"Error getting balance from {sub_account.subAcct}")
-            time.sleep(2)
+            time.sleep(1)
 
         print(f"Sum = {balance_sum} {BALANCE_TOKEN}")
 
