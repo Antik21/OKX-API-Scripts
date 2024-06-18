@@ -7,7 +7,7 @@ OKX API SCRYPTS
 2. Or users who need to quickly sell their airdrops from multiple accounts.
 
 ## How to set up the script to run?
-1. Generate an [API Key](https://support.cryptact.com/hc/en-us/articles/10076952807193-How-to-get-an-API-key-for-OKX) for **Main** account. Be sure to add Read and Trade permissions.
+1. Generate an [API Key](https://support.cryptact.com/hc/en-us/articles/10076952807193-How-to-get-an-API-key-for-OKX) for **Main** account. Be sure to add **Read** and **Trade** permissions. Regarding the **Withdraw** permission, I'm not sure, I think it is not needed for Internal transfers(Tested with the Withdraw).
 2. Insert your keys into the **accounts.txt** file. If you are using a proxy, add them to the same file.
 3. Configure the scripts in the **config.py** file.
 4. Run the script and test the bot's functionality with a balance request operation.
