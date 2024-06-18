@@ -11,7 +11,7 @@ def start():
     clients = load_clients()
     for client in clients:
         print("")
-        print(f"Collecting to Master {client.account.account_id}")
+        print(f"Collecting to Main {client.account.account_id}")
 
         sub_account_list_response = get_sub_account_list(client)
         if not sub_account_list_response.is_success():
@@ -33,7 +33,7 @@ def start():
 
         main_balance = get_main_balance(client, COLLECT_TO_ACCOUNT_TYPE, COLLECT_TOKEN)
         if main_balance != GET_BALANCE_ERROR_CODE:
-            print(f"Master balance: {main_balance} {COLLECT_TOKEN}")
+            print(f"Main balance: {main_balance} {COLLECT_TOKEN}")
         else:
             print(f"Error getting balance from Master")
 
