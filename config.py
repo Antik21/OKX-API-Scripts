@@ -1,39 +1,32 @@
-# Настройки
+# Settings
 
-#Общие настройки
-MAX_RETRIES = 1  # Максимальное количество попыток при ошибке
-DELAY_BETWEEN_RETRIES = 10  # Задержка между повторными попытками в секундах
-ACCOUNT_DELAY_RANGE = (0, 0)  # Задержка между аккаунтами
+# Server requests
+REQUEST_TIMEOUT = 10  # How many seconds to try to get a successful response to the request
+DELAY_BETWEEN_RETRIES = 1  # Delay between retries after an error in seconds
 
+# API constants
+ACCOUNT_TYPE_FUNDING = "6"
+ACCOUNT_TYPE_TRADING = "18"
+TRADE_MODE_NON_MARGIN = "cash"
+TRADE_OPERATION_SELL = "sell"
+TRADE_OPERATION_BUY = "buy"
+TRADE_ORDER_TYPE_MARKET = "market"
 
-#МОДУЛЬ ПРОВЕРКИ БАЛАНСА
-TOKEN = "USDT"  # Указываем баланс какого токена мы проверяем
-THRESHOLD = 1  # Указываем мин баланс, выше которого баланс будет подсвечен зеленым цветом, ниже красным, если None - то все будет одним цветом
-ACCOUNT_TYPE = "UNIFIED"  # Указываем какой счет байбит проверяем "FUND" или "UNIFIED"
+# Script constants
+GET_BALANCE_ERROR_CODE = -1.0
 
-#МОДУЛЬ ВНУТРЕННЕГО ПЕРЕВОДА МЕЖДУ СЧЕТАМИ
-CHOSEN_TOKEN = "USDT" # Указываем токен который переводим
-FROM_ACCOUNT_TYPE = "UNIFIED" # Указываем с какого счета переводим "FUND" или "UNIFIED"
-TO_ACCOUNT_TYPE = "FUND" # Указываем на какой счет переводим "FUND" или "UNIFIED"
-TRANSFER_AMOUNT = None # Указываем сумму которую хотим перевести, если None то переведет весь баланс
+# Balance output
+BALANCE_TOKEN = "USDT"  # Specify the balance of which token we are checking
+BALANCE_MAIN_ACCOUNT_TYPE = ACCOUNT_TYPE_FUNDING  # Specify the type of account balance to display
 
-#МОДУЛЬ ТОРГОВОГО ОБЬЕМА НА СПОТЕ В ПАРЕ USDC-USDT
-REPEATS = 2  # Пример значения, задайте нужное количество повторений свапов (одно повтоение это два свапа)
-PAUSE_RANGE = (5, 5)  # Минимальное и максимальное время задержки между свапами
+# Internal transfer
+COLLECT_TOKEN = "USDT"  # Specify the token to transfer
+COLLECT_FROM_ACCOUNT_TYPE = ACCOUNT_TYPE_FUNDING  # Specify the account to transfer from: "Funding" or "Trading"
+COLLECT_TO_ACCOUNT_TYPE = ACCOUNT_TYPE_TRADING  # Specify the account to transfer to: "Funding" or "Trading"
+COLLECT_AMOUNT_PERCENT = 1  # Specify the amount to transfer. 0.50 - 50%
 
-#МОДУЛЬ СВАП ЛЮБОЙ ПАРЫ НА СПОТЕ И НА МАРЖЕ
-TOKEN_1 = "VELAR" #токен который указан первым  в паре, если пара BNBUSDT - то указываем тут BNB
-TOKEN_2 = "USDT" #токен который указан вторым в паре, если пара BNBUSDT - то указываем тут USDT
-TRADE_DIRECTION = "SELL"  # "SELL" Или "BUY"
-EXCHANGE_AMOUNT = None  # Указываем сумму которую хотим обменять, если None то свапнет весь баланс монеты
-LEV = 10 # Задаем кредитное плече 
-DECIMAL_PLACES = 4 # Количество символов после запятой которое скрипт будет отправлять в работу
-
-#МОДУЛЬ ВЫВОДА С БИРЖИ
-CHOSEN_TOKEN_WITHDRAW = "USDT" # указываем токен который выводим
-DESIRED_NETWORK = "BSC" # Указываем название сети в которой делаем вывод, используй модуль "Узнать доступные сети для вывода" чтобы узнать как правильно записать сеть
-WITHDRAW_AMOUNT = None # Указываем сумму которую хотим вывести, если None то выведет весь баланс
-
-#МОДУЛЬ ПОЛУЧЕНИЯ АДРЕСА ДЛЯ ДЕПОЗИТА
-COIN = "ETH" # Указываем токен который планируем депозитить
-CHAIN = "ARBI" # Указываем сеть в которой планируем депозитить
+# Trading
+TRADE_TOKEN_1 = "BTC"  # Specify the first token
+TRADE_TOKEN_2 = "USDT"  # Specify the second token
+TRADE_OPERATION = TRADE_OPERATION_SELL  # Specify whether to sell or buy
+TRADE_AMOUNT_PERCENT = 1  # Specify the amount to trade. ex. 0.50 = 50%
