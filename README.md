@@ -1,6 +1,6 @@
-# OKX-AIO
+# OKX API SCRYPTS
 
-OKX API SCRYPTS
+OKX API Scrypts that automate manual work
 
 ## Who will find these scripts useful?
 1. For users who repeatedly need to collect their airdrops from sub-accounts to Main.
