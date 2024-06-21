@@ -35,7 +35,7 @@ def start():
         if main_balance != GET_BALANCE_ERROR_CODE:
             print(f"Main balance: {main_balance} {COLLECT_TOKEN}")
         else:
-            print(f"Error getting balance from Master")
+            print(f"Error getting balance from Main")
 
 
 if __name__ == "__main__":
