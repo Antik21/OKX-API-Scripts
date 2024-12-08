@@ -28,8 +28,8 @@ Enter your account details in the exact order as specified in the template.
 
 
 ## Donate
-If you found my bot useful and it brought you a few hundred USD more, or saved you time, send a little something to the developer for a beer :)
+[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/antiglobalist)
 
-USDT BNB Network 0x3E92ac8A955c0CcaA3abE350A7097b4e8aAFB5c5
+USDT 0x3E92ac8A955c0CcaA3abE350A7097b4e8aAFB5c5
 
 Developed by @deni_rodionov Telegram
