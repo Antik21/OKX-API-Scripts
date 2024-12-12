@@ -28,8 +28,11 @@ Enter your account details in the exact order as specified in the template.
 
 
 ## Donate
+If you find this project helpful and would like to support its development, consider making a donation:
 [![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/antiglobalist)
 
-USDT 0x3E92ac8A955c0CcaA3abE350A7097b4e8aAFB5c5
+Arbitrum USDT 0x3E92ac8A955c0CcaA3abE350A7097b4e8aAFB5c5
 
-Developed by @deni_rodionov Telegram
+Your support is greatly appreciated!
+
+**Developed by** @deni_rodionov Telegram
