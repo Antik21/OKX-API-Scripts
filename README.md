@@ -35,4 +35,4 @@ Arbitrum USDT 0x3E92ac8A955c0CcaA3abE350A7097b4e8aAFB5c5
 
 Your support is greatly appreciated!
 
-**Developed by** @deni_rodionov Telegram
+**Developed by** [Antiglobalist](https://t.me/deni_rodionov)
