@@ -1,4 +1,4 @@
-# OKX API SCRYPTS
+# OKX Api scrypts
 
 OKX API Scrypts that automate manual work
 
